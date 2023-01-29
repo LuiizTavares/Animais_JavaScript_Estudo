@@ -144,6 +144,8 @@ html.textomaior {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #e54;
+  cursor: pointer;
+  max-width: max-content;
 }
 
 .faq-lista dt::before {
@@ -244,5 +246,34 @@ html.textomaior {
   to {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: "⬎";
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: "⬏";
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown 0.5 forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0px;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
   }
 }
