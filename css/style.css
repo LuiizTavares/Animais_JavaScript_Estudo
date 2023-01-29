@@ -185,6 +185,11 @@ html.textomaior {
   background: #fb5;
 }
 
+.dados li a {
+  text-decoration: none;
+  color: #222;
+}
+
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 2rem;
